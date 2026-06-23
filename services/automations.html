@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="he" dir="rtl"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>אוטומציות ובוטים חכמים — Shapo Digital</title>
+<meta name="description" content="בוטים שמטפלים בלקוחות 24/7">
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head><body>
+<header id="hdr"><div class="container nav">
+  <a class="logo" href="../index.html">SHAPO<b>.</b>DIGITAL</a>
+  <nav class="nav-links" id="navlinks">
+    <a href="../index.html#services">שירותים</a>
+    <a href="../index.html#process">איך זה עובד</a>
+    <a href="../index.html#contact">צור קשר</a>
+    <a class="nav-cta" href="../index.html#contact">קבעו שיחה</a>
+  </nav>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
+</div></header>
+<section class="hero" style="min-height:60vh">
+  <div class="container hero-inner">
+    <span class="eyebrow reveal">שירות</span>
+    <h1 class="reveal">אוטומציות ובוטים חכמים</h1>
+    <p class="reveal">בוטים חכמים לאינסטגרם, וואטסאפ ומסנג'ר שמקבלים לידים, מתאמים פגישות ועונים ללקוחות באופן אוטומטי — חוסכים לכם שעות עבודה כל יום.</p>
+    <div class="hero-btns reveal"><a class="btn btn-gold" href="../index.html#contact">קבעו שיחת ייעוץ</a><a class="btn btn-ghost" href="../index.html#services">לכל השירותים</a></div>
+  </div>
+</section>
+<section class="sec"><div class="container">
+  <div class="sec-head reveal"><span class="eyebrow">מה כלול</span><h2>מה תקבלו מאיתנו</h2></div>
+  <div class="svc-grid">
+    <article class="svc-card reveal"><h3>התאמה אישית מלאה</h3><p>הכל נבנה סביב העסק והמטרות שלכם — בלי תבניות גנריות.</p></article>
+    <article class="svc-card reveal"><h3>איכות פרימיום</h3><p>סטנדרט גבוה בכל פרט, מהעיצוב ועד הקוד שמאחורי הקלעים.</p></article>
+    <article class="svc-card reveal"><h3>ליווי וזמינות</h3><p>אנחנו איתכם לאורך כל הדרך, גם אחרי ההשקה.</p></article>
+  </div>
+</div></section>
+<section class="cta-strip"><div class="cta-inner reveal">
+  <h2>רוצים לשמוע עוד?</h2><p>בואו נדבר ונבנה לכם פתרון שמתאים בדיוק לעסק שלכם.</p>
+  <a class="btn btn-gold" href="../index.html#contact">קבעו שיחת ייעוץ חינם</a>
+</div></section>
+<footer><div class="container"><div class="foot-bottom">© 2026 Shapo Digital · נבנה על ידי Shapo Digital — Mishel Zvigi</div></div></footer>
+<script>
+const hdr=document.getElementById('hdr');addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>40));
+const b=document.getElementById('burger'),nl=document.getElementById('navlinks');b.onclick=()=>nl.classList.toggle('open');
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body></html>
